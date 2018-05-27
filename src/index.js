@@ -3,6 +3,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import SearchBar from './components/search_bar';
+
+const API_KEY = 'AIzaSyCYNgJJHXUHoYIvKV8xrz5yP7Pnvse2M7s'
+
 /*
 Creates a new component that produces html
 JSX transpiles to:
@@ -13,7 +17,11 @@ This is like a factory for creating App functions.
 = function ()
 */
 const App = () => {
-    return <div>Hi!</div>;
+    return (
+    <div>
+      <SearchBar />
+    </div>
+    );
 }
 
 // Put the generated html and insert it on the DOM
